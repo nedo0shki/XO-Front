@@ -1,0 +1,64 @@
+
+{{#if win}}
+  <h1> Game Over </h1>
+{{/if}}
+<table width="800" height="400">
+        <tr width=50%>
+            <td width="33%" bgcolor="#6CBB3C" {{action 'toggle' 0}}>
+              {{#each model as |str|}}
+                <center> {{get (split str.stateString) 'c0'}} </center>
+              {{/each}}
+            </td>
+            <td width="33%" bgcolor="#6CBB3C" {{action 'toggle' 1}}>
+              {{#each model as |str|}}
+                <center> {{get (split str.stateString) 'c1'}} </center>
+              {{/each}}
+            </td>
+            <td width="33%" bgcolor="#6CBB3C" {{action 'toggle' 2}}>
+              {{#each model as |str|}}
+                <center> {{get (split str.stateString) 'c2'}} </center>
+              {{/each}}
+            </td>
+        </tr>
+<tr width=50%>
+            <td width="33%" bgcolor="#6CBB3C" {{action 'toggle' 3}}>
+              {{#each model as |str|}}
+                <center> {{get (split str.stateString) 'c3'}} </center>
+              {{/each}}
+            </td>
+            <td width="33%" bgcolor="#6CBB3C" {{action 'toggle' 4}}>
+              {{#each model as |str|}}
+                <center> {{get (split str.stateString) 'c4'}} </center>
+              {{/each}}
+            </td>
+            <td width="33%" bgcolor="#6CBB3C" {{action 'toggle' 5}}>
+              {{#each model as |str|}}
+                <center> {{get (split str.stateString) 'c5'}} </center>
+              {{/each}}
+            </td>
+        </tr>
+<tr width=50%>
+            <td width="33%" bgcolor="#6CBB3C" {{action 'toggle' 6}}>
+              {{#each model as |str|}}
+                <center> {{get (split str.stateString) 'c6'}} </center>
+              {{/each}}
+            </td>
+            <td width="33%" bgcolor="#6CBB3C" {{action 'toggle' 7}}>
+              {{#each model as |str|}}
+                <center> {{get (split str.stateString) 'c7'}} </center>
+              {{/each}}
+            </td>
+            <td width="33%" bgcolor="#6CBB3C" {{action 'toggle' 8}}>
+              {{#each model as |str|}}
+                <center> {{get (split str.stateString) 'c8'}} </center>
+              {{/each}}
+            </td>
+        </tr>
+
+
+
+    </table>
+
+
+
+{{outlet}}
